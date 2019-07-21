@@ -1,0 +1,19 @@
+[user]
+	name = shimonchick
+	email = shimonchick@gmail.com
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff]
+    guitool = intellij
+	tool = intellij
+[difftool "intellij"]
+	cmd = cmd.exe //c "idea.bat diff \"$LOCAL\" \"$REMOTE\""
+	trustExitCode = false
+[merge]
+	tool = intellij
+[mergetool "intellij"]
+	cmd = cmd.exe //c "idea.bat merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+	trustExitCode = false
