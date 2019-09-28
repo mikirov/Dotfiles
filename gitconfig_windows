@@ -1,6 +1,6 @@
 [user]
 	name = Mihail Kirov
-	email = mmihail.kirov2@gmail.com
+	email = mihail.kirov2@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
